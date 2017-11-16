@@ -5,7 +5,7 @@ Android Programing
 #### 예제
 ____________________________________________________
 
-- [서울시 기상정보 받아오기](https://github.com/Hooooong/DAY41_SeoulWeather)
+- [RxJava 와 Retrofit2 를 사용하여 실시간으로 서울시 기상 관측 정보 가져오기](https://github.com/Hooooong/DAY41_SeoulWeather)
 
 #### 공부정리
 ____________________________________________________
