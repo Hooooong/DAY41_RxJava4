@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         EditText editPassword = findViewById(R.id.editPassword);
 
         // 0. 로그인 체크하기
+        // RxTextView 의 textChangeEvents 를 사용하여 변화에 반응하는 Observale 을 생성
         Observable<TextViewTextChangeEvent> idEmitter = RxTextView.textChangeEvents(editId);
         Observable<TextViewTextChangeEvent> pwEmitter = RxTextView.textChangeEvents(editPassword);
         // 조건 ID 가 5자 이상이고, PW 가 8자 이상이면 btnSignIn 의 enable 이 true 로 변경
