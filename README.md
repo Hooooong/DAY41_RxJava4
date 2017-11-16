@@ -14,7 +14,7 @@ ____________________________________________________
 
 - RxBinding 이란?
 
-  > JakeWharton 이 만든 RxJava 의 Binding Library 이다. View에 대한 반응형 Library로 RxJava 와 함께 반응형 Library이다.
+  > JakeWharton 이 만든 RxJava 의 Binding Library 이다. View에 대한 반응형 Library로 RxJava 와 함께 사용한다.
 
 - RxBinding 설정  
 
@@ -31,6 +31,7 @@ ____________________________________________________
 
   ```java
   // 0. 로그인 체크하기
+  // RxTextView 의 textChangeEvents 를 사용하여 변화에 반응하는 Observale 을 생성
   Observable<TextViewTextChangeEvent> idEmitter = RxTextView.textChangeEvents(editId);
   Observable<TextViewTextChangeEvent> pwEmitter = RxTextView.textChangeEvents(editPassword);
   // 조건 ID 가 5자 이상이고, PW 가 8자 이상이면 btnSignIn 의 enable 이 true 로 변경
